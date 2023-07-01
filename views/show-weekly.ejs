@@ -1,0 +1,58 @@
+<!-- weekly.ejs -->
+<html>
+  <head>
+    <title>Weekly Habits</title>
+    <style>
+        .main {
+          padding: 20px;
+          font-family: Arial, sans-serif;
+        }
+  
+        h1 {
+          color: #333;
+        }
+  
+        h2 {
+          margin-bottom: 10px;
+          color: #555;
+        }
+  
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+  
+        li {
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin: 0;
+        }
+      </style>
+  </head>
+  <body>
+   <div class="main">
+    <h1>Weekly Habits</h1>
+    <% for (let i = 0; i < habits.length; i++) { %>
+      <h2><%= weekDates[i].toLocaleDateString() %></h2>
+      <% if (habits[i].length === 0) { %>
+        <p>No habits for this day.</p>
+      <% } else { %>
+        <ul>
+          <% habits[i].forEach(habit => { %>
+            <li>
+              <p>Content: <%= habit.content %></p>
+              <p>Goal: <%= habit.goal %></p>
+              <p>Time: <%= habit.time %></p>
+              <p>Frequency: <%= habit.frequency %></p>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+    <% } %>
+
+
+   </div>
+  </body>
+</html>

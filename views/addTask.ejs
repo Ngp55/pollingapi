@@ -1,0 +1,26 @@
+
+<link rel="stylesheet" href="/css/addTask.css">
+
+<div class="main-container">
+    <div class="child">
+        
+        <form id="habit-form" action="/habits/create-habits" method="post">
+            <label for="name">What habit you want to Create (*):</label>
+            <input type="text" id="name" name="content" placeholder="Enter the name" required><br>
+            <label for="goal">What do you want to Achieve (*):</label>
+            <input type="text" id="goal" name="goal" placeholder="Enter your goal" required><br>
+            <label for="date">End Date :</label>
+            <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" ><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br>
+            <label for="frequency">Frequency:</label>
+            <select id="frequency" name="frequency">
+                <option value="twice_a_day">Twice a Day</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+            </select>
+            <br>
+            <button type="submit">Create Habit</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="/css/home.css">
+
+
+<div class="main-container1">
+    <% if(locals.user){ %>
+        <div class="box1">
+            <form action="/" id="new-post-form" method="POST">
+                <a href="/habits/show-habitpage" class="button" >Add New Habit</a>
+                <a href="/habits/show-weeklypage" class="button" >Show My Strek</a>
+                
+                
+            </form>
+
+        </div>
+        <% for(let details of habits) { %>
+          
+            <div class="flex-container">
+               
+                <div class="item1"><p class="alignleft header"><%= details.content %></p></div>
+                <div class="item2"><p class="alignleft head2"><%= details.goal %></p></div>
+                <div class="item3"><p class="alignleft">Streak :4/7</p></div>
+                <div class="item4"><p class="alignleft"><%=details.time %> <%=details.frequency %></p></div>
+                <div class="item5 display"> 
+                  <form action="/btns/saveButton" method="POST">
+                    <input type="radio" name="status" id="option1" value="Done">
+                    <label for="option1">Done</label>
+                  
+                    <input type="radio" name="status" id="option2" value="Not Done">
+                    <label for="option2">Not Done</label>
+                  
+                    <input type="radio" name="status" id="option3" value="None">
+                    <label for="option3">None</label>
+                  
+                    <input type="hidden" name="habitRef" value="<%= details.id %>" >
+                    <input type="submit" value="Save it!">
+                  </form>
+                      
+                      
+                </div>
+                <div class="item6"><p class="alignleft"><a href="/habits/delete/:habitId" class="button aline" >Remove Habit</a></p></div>
+                <div class="item7" style="font-style: italic;">
+                  <% buttons.forEach(function(button, index) { %>
+                    <p>
+                      
+                      <% if (index === buttons.length - 1) { %>
+                        <%= button.name %>
+                      <% } %>
+                    </p>
+                  <% }) %>
+                      
+                </div>
+
+            
+            </div>
+
+        <% } %>
+        <% } else { %>
+                
+            <div class="container">
+                <h1>Please Log In to Track or Add Habit</h1>
+                <p>Log in to start tracking your habits and improve your daily routine!</p>
+                <a href="/users/sign-in" class="button">Log In</a>
+                <p>Or</p>
+                <a href="/users/sign-up" class="button">Sign Up</a>
+              </div>
+
+        <% } %>
+
+</div>
+
+
