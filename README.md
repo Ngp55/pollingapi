@@ -24,30 +24,30 @@ To start developing, make sure you have the following installed in your environm
 Node.js
 Ubuntu: Go to the official Node.js website and download the installer. Make sure to include .git in your PATH as npm might require it. You can download Git from here.
 Other operating systems: You can find installation instructions for your specific OS on the official Node.js website and NPM website.
+
 Once the installation is complete, you can verify it by running the following commands in your terminal:
+$ node --version<br />
+v16.13.0<br />
 
-$ node --version
-v16.13.0
+$ npm --version<br />
+8.2.0<br />
+If you need to update npm, you can use npm itself. Just run the following command and then reopen your terminal:<br />
 
-$ npm --version
-8.2.0
-If you need to update npm, you can use npm itself. Just run the following command and then reopen your terminal:
+$ npm install npm -g<br />
+Running the Project Locally<br />
+To run the project on your local machine, follow these steps:<br />
 
-$ npm install npm -g
-Running the Project Locally
-To run the project on your local machine, follow these steps:
+Open your terminal.<br />
 
-Open your terminal.
+Navigate to the directory where you want to clone the project.<br />
 
-Navigate to the directory where you want to clone the project.
+[$ git clone https://github.com/<user_profile>/Polling_System_API](https://github.com/Ngp55/pollingapi.git)
+Install all the dependencies by running the following command:<br />
+$ npm install<br />
+Start the project on your local host using port 7000:<br />
 
-$ git clone https://github.com/<user_profile>/Polling_System_API
-Install all the dependencies by running the following command:
-$ npm install
-Start the project on your local host using port 7000:
-
-$ npm start
-The project will now be running locally on http://localhost:7000.
+$ npm start<br />
+The project will now be running locally on http://localhost:7000.<br />
 
 Now you're all set to start developing and exploring the Polling System API on your local machine. Happy coding!
 
