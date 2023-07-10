@@ -56,12 +56,10 @@ Now you're all set to start developing and exploring the Polling System API on y
 2.http://localhost:7000/api/v1/questions/64aae4dbb2aacd818f8bfa48/create-option
 ![2](https://github.com/Ngp55/pollingapi/assets/40921926/f56246bc-dc10-4fe1-8bf5-4e431aca0cbe)
 3.http://localhost:7000/api/v1/options/64aae53ab2aacd818f8bfa51/addVote
-
-4.http://localhost:7000/api/v1/options/64aae51fb2aacd818f8bfa4b/delete
-
-5.http://localhost:7000/api/v1/questions/64aae4b1b2aacd818f8bfa46/delete
 ![5](https://github.com/Ngp55/pollingapi/assets/40921926/4c2bf97f-44e9-494e-a77a-8d60a52dc9d9)
-6.http://localhost:7000/api/v1/questions/64aae4dbb2aacd818f8bfa48
+4.http://localhost:7000/api/v1/options/64aae51fb2aacd818f8bfa4b/delete
 ![6](https://github.com/Ngp55/pollingapi/assets/40921926/db88539d-19e6-4ab5-8c68-7bf54505b63a)
+5.http://localhost:7000/api/v1/questions/64aae4b1b2aacd818f8bfa46/delete
 ![7](https://github.com/Ngp55/pollingapi/assets/40921926/bc6df06c-6066-4418-b102-7d1206b45044)
+6.http://localhost:7000/api/v1/questions/64aae4dbb2aacd818f8bfa48
 ![8](https://github.com/Ngp55/pollingapi/assets/40921926/313f3444-666a-453d-9c19-850035c4d957)
